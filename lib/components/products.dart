@@ -33,7 +33,7 @@ class _ProductsState extends State<Products> {
       "price": 230,
     },
     {
-      "name": "Happy Birthday!",
+      "name": "Happy \nBirthday!",
       "picture": "images/products/hb.jpg",
       "size": "small",
       "container": "metallic",
