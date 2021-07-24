@@ -39,6 +39,22 @@ class _ProductsState extends State<Products> {
       "container": "metallic",
       "old_price": 250,
       "price": 170,
+    },
+    {
+      "name": "Season\nspring-summer!",
+      "picture": "images/products/lito.jpg",
+      "size": "small",
+      "container": "metallic",
+      "old_price": 250,
+      "price": 170,
+    },
+    {
+      "name": "Deep secret\nCandle X",
+      "picture": "images/products/svx.jpg",
+      "size": "small",
+      "container": "metallic",
+      "old_price": 250,
+      "price": 170,
     }
   ];
 
@@ -100,29 +116,13 @@ class Single_prod extends StatelessWidget {
               child: GridTile(
                   footer: Container(
                     color: Colors.blue.shade100,
-                    child: ListTile(
-                      leading: Text(
-                        prod_name,
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                    child: Row(children: <Widget>[
+                      Expanded(
+                          child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                       ),
-                      title: Container(
-                        alignment: Alignment.centerRight,
-                        child: Text(
-                          "\₴$prod_price",
-                          style: TextStyle(
-                              color: Colors.redAccent,
-                              fontWeight: FontWeight.w800),
-                        ),
-                      ),
-                      subtitle: Text(
-                        "\₴$prod_old_price",
-                        style: TextStyle(
-                          color: Colors.black54,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.lineThrough,
-                        ),
-                      ),
-                    ),
+                      
+                      Text("\₴${prod_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),)
+                    ],)
                   ),
                   child: Image.asset(
                     prod_picture,

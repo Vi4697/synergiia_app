@@ -173,7 +173,7 @@ class _HomePageState extends State<HomePage> {
           HorizontalList(),
 
           //padding widget
-          new Padding(padding: const EdgeInsets.all(30.0),
+          new Padding(padding: const EdgeInsets.all(10.0),
             child: new Text('Favorite products'),),
 
           //grid view
