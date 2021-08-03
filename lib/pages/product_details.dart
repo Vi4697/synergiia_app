@@ -1,5 +1,6 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
+import 'package:synergiia_app/main.dart';
 //import '';
 
 class ProductDetails extends StatefulWidget {
@@ -30,8 +31,11 @@ class _ProductDetailsState extends State<ProductDetails> {
       appBar: new AppBar(
         elevation: 0.5, //changing the shade from the appBar
         backgroundColor: Colors.blueAccent[200],
-        title: Text('SynergiiApp',
-          style: TextStyle(color: Colors.white),
+        title: InkWell(
+          onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));},
+          child: Text('SynergiiApp',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         actions: <Widget>[
           new IconButton(
