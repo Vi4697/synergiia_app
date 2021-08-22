@@ -4,6 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 //my own imports
 import 'package:synergiia_app/components/horizontal_listview.dart';
 import 'package:synergiia_app/components/products.dart';
+import 'package:synergiia_app/pages/cart.dart';
 
 
 void main() {
@@ -62,7 +63,9 @@ class _HomePageState extends State<HomePage> {
               Icons.shopping_cart,
               color: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Cart()));
+            },
           )
         ],
       ),
@@ -111,17 +114,19 @@ class _HomePageState extends State<HomePage> {
               onTap: (){},
               child: ListTile(
                 title: Text('My Orders'),
-                leading: Icon(Icons.shopping_cart, color: Colors.black54,),
+                leading: Icon(Icons.shopping_basket, color: Colors.black54,),
               ),
             ),
 
 
             //Categories
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Cart()));
+              },
               child: ListTile(
-                title: Text('Categories'),
-                leading: Icon(Icons.dashboard, color: Colors.black54,),
+                title: Text('Shopping cart'),
+                leading: Icon(Icons.shopping_cart, color: Colors.black54,),
               ),
             ),
 
