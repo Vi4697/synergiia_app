@@ -114,20 +114,29 @@ class Single_cart_product extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       color: Colors.redAccent),
                 ),
+              ),
+              Container(
+                alignment: Alignment.topCenter,
+                child: Text("Quantity: $cart_prod_quantity", // QUANTITY for ARROWS
+                    style: TextStyle(
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87)),
               )
             ],
           ),
-          trailing: Padding(
-            padding: const EdgeInsets.all(0.0),
-            child: Expanded(
-            child: Column(
-              children: [
-                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_drop_up)), //OVERFLOW ERROR
-              ],
-            ),
-          ),),
+          trailing: Column(
+            children: [
+              Expanded(
+                  child: IconButton(
+                      onPressed: () {}, icon: Icon(Icons.arrow_drop_up))),
+              Expanded(
+                  child: IconButton(
+                      onPressed: () {}, icon: Icon(Icons.arrow_drop_down)))
+            ],
+          ),
         ),
-    ),
+      ),
     );
   }
 }

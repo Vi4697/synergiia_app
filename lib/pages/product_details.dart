@@ -312,7 +312,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
                 child: new Text(
-                  "Product condition(smell/hours burning)",
+                  "Product details (smell/hours burning)",
                   style: TextStyle(color: Colors.grey),
                 ),
               )
@@ -346,7 +346,7 @@ class Similar_products extends StatefulWidget {
 class _Similar_productsState extends State<Similar_products> {
   var product_list = [
     {
-      "name": "Oatmeal with \nmilk",
+      "name": "Oatmeal with milk",
       "picture": "images/products/oatmeal.jpg",
       "size": "small",
       "container": "glass",
@@ -354,7 +354,7 @@ class _Similar_productsState extends State<Similar_products> {
       "price": 230,
     },
     {
-      "name": "Power of \nthoughts",
+      "name": "Power of thoughts",
       "picture": "images/products/power.jpg",
       "size": "small",
       "container": "glass",
@@ -362,14 +362,14 @@ class _Similar_productsState extends State<Similar_products> {
       "price": 230,
     },
     {
-      "name": "Deep secret\nCandle X",
+      "name": "Deep secret Candle X",
       "picture": "images/products/svx.jpg",
       "size": "small",
       "container": "metallic",
       "old_price": 250,
       "price": 170,
     },{
-      "name": "Pause for \nDetox",
+      "name": "Pause for Detox",
       "picture": "images/products/detox.jpg",
       "size": "big",
       "container": "metallic",
@@ -438,17 +438,20 @@ class Similar_single_prod extends StatelessWidget {
                       child: Row(
                         children: <Widget>[
                           Expanded(
-                            child: Text(
+                            child: Container(
+                              alignment: Alignment.center,
+                              height: 40.0,
+                              child: Text(
                               prod_name,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 16.0),
-                            ),
+                            ),)
                           ),
-                          Text(
-                            "\₴${prod_price}",
-                            style: TextStyle(
-                                color: Colors.red, fontWeight: FontWeight.bold),
-                          )
+                          // Text(
+                          //   "\₴${prod_price}",
+                          //   style: TextStyle(
+                          //       color: Colors.red, fontWeight: FontWeight.bold),
+                          // )
                         ],
                       )),
                   child: Image.asset(

@@ -9,7 +9,7 @@ class Products extends StatefulWidget {
 class _ProductsState extends State<Products> {
   var product_list = [
     {
-      "name": "Oatmeal with \nmilk",
+      "name": "Oatmeal with milk",
       "picture": "images/products/oatmeal.jpg",
       "size": "small",
       "container": "glass",
@@ -17,7 +17,7 @@ class _ProductsState extends State<Products> {
       "price": 230,
     },
     {
-      "name": "Pause for \nDetox",
+      "name": "Pause for Detox",
       "picture": "images/products/detox.jpg",
       "size": "big",
       "container": "metallic",
@@ -25,7 +25,7 @@ class _ProductsState extends State<Products> {
       "price": 320,
     },
     {
-      "name": "Power of \nthoughts",
+      "name": "Power of thoughts",
       "picture": "images/products/power.jpg",
       "size": "small",
       "container": "glass",
@@ -33,7 +33,7 @@ class _ProductsState extends State<Products> {
       "price": 230,
     },
     {
-      "name": "Happy \nBirthday!",
+      "name": "Happy Birthday!",
       "picture": "images/products/hb.jpg",
       "size": "small",
       "container": "metallic",
@@ -41,7 +41,7 @@ class _ProductsState extends State<Products> {
       "price": 170,
     },
     {
-      "name": "Season\nspring-summer!",
+      "name": "Season spring-summer!",
       "picture": "images/products/lito.jpg",
       "size": "small",
       "container": "metallic",
@@ -49,7 +49,7 @@ class _ProductsState extends State<Products> {
       "price": 170,
     },
     {
-      "name": "Deep secret\nCandle X",
+      "name": "Deep secret Candle X",
       "picture": "images/products/svx.jpg",
       "size": "small",
       "container": "metallic",
@@ -116,12 +116,15 @@ class Single_prod extends StatelessWidget {
               child: GridTile(
                   footer: Container(
                     color: Colors.blue.shade100,
+                    height: 40.0,
                     child: Row(children: <Widget>[
                       Expanded(
-                          child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
+                          child: Container(
+                            alignment: Alignment.center,
+                            child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14.0, color: Colors.black), ),),
                       ),
                       
-                      Text("\₴${prod_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),)
+                      //Text("\₴${prod_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),)
                     ],)
                   ),
                   child: Image.asset(
