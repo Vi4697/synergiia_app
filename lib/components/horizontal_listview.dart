@@ -7,29 +7,29 @@ class HorizontalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 45,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Category(
             image_location: 'images/icons/p1.png',
-            image_caption: 'Candles',
+         //   image_caption: 'Candles',
           ),
           Category(
             image_location: 'images/icons/arom3.png',
-            image_caption: 'Aromas',
+         //   image_caption: 'Aromas',
           ),
           Category(
             image_location: 'images/icons/aroma5.png',
-            image_caption: 'Oils',
+          //  image_caption: 'Oils',
           ),
           Category(
             image_location: 'images/icons/set1.png',
-            image_caption: 'Kit',
+           // image_caption: 'Kit',
           ),
           Category(
             image_location: 'images/icons/pr1.png',
-            image_caption: 'Package',
+           // image_caption: 'Package',
           ),
 
         ],
@@ -40,11 +40,11 @@ class HorizontalList extends StatelessWidget {
 
 class Category extends StatelessWidget {
   final String image_location;
-  final String image_caption;
+  //final String image_caption;
 
   Category({
     required this.image_location,
-    required this.image_caption,
+    //required this.image_caption,
   });
 
   @override
@@ -64,9 +64,9 @@ class Category extends StatelessWidget {
             ),
             subtitle: Container(
               alignment: Alignment.topCenter,
-              child: Text(image_caption,
-                style: new TextStyle(fontSize: 15.0),
-              ),
+              // child: Text(image_caption,
+              //   style: new TextStyle(fontSize: 15.0),
+              // ),
             )
           ),
         ),

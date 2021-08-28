@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Widget image_carousel = new Container(
-      height: 200.0,
+      height: 170.0,
       child: new Carousel(
         boxFit: BoxFit.cover,
         images: [
@@ -35,7 +35,8 @@ class _HomePageState extends State<HomePage> {
         autoplay: false,
         // animationCurve: Curves.fastOutSlowIn,
         // animationDuration: Duration(microseconds: 1000),
-        indicatorBgPadding: 5.0,
+        indicatorBgPadding: 1.0,
+        dotSize: 6.0,
         dotColor: Colors.grey[400],
       ),
     );
@@ -186,7 +187,7 @@ class _HomePageState extends State<HomePage> {
 
           //padding widget
           new Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(4.0),
             child: Container(
               alignment: Alignment.center,
               child: new Text(
@@ -201,7 +202,7 @@ class _HomePageState extends State<HomePage> {
 
           //padding widget
           new Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(6.0),
             child: Container(
               alignment: Alignment.center,
               child: new Text(
