@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 // my imports
 import 'package:synergiia_app/main.dart';
 import 'package:synergiia_app/pages/cart.dart';
+import './home.dart';
 
 class ProductDetails extends StatefulWidget {
   final product_detail_name;
