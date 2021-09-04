@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "478930019674",
+    "project_id": "synergiia-app",
+    "storage_bucket": "synergiia-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478930019674:android:2f4d2a0ab9ab75fa98ff63",
+        "android_client_info": {
+          "package_name": "viktoriia.com.synergiia_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478930019674-hhrdl4joqj7kel1aesq9ak7m9bu60eo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "viktoriia.com.synergiia_app",
+            "certificate_hash": "aa6f036fd182a249995cc259feea60898c64727d"
+          }
+        },
+        {
+          "client_id": "478930019674-krt65i76156ngqe3anvp4q7obkcq3gbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVCZm3apwGuZzTl4vzTGQ2_gLAJNjyJ7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478930019674-krt65i76156ngqe3anvp4q7obkcq3gbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
